@@ -1,0 +1,21 @@
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,minimum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="theme-color" content="#007b8b">
+    <meta name="mobile-web-app-capable" content=yes>
+    <meta name="application-name" content="{{ site.title }}">
+    <meta name="msapplication-starturl" content="{{ site.url }}">
+    <meta name="msapplication-navbutton-color" content="#007b8b">
+    <meta name="apple-mobile-web-app-capable" content=yes>
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel=search type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ site.title }}">
+    <link rel=alternate type="application/rss+xml" title="RSS 2.0" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link href="/css/main.css" rel="stylesheet">
+    <meta name="google-site-verification" content="HXl_T-jLT04RDONEhTuxa44daUsG9NdOUdyyOnieaSg" />
+    <meta name=description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+</head>

@@ -1,0 +1,10 @@
+<nav class="page-navi">
+    {% if page.previous %}
+    {% assign current = page.previous %}
+    <a href="{{ current.url }}" class=prev>« {{ current.title }}</a>
+    {% endif %}
+    {% if page.next %}
+    {% assign current = page.next %}
+    <a href="{{ current.url }}" class="next">{{ current.title }} »</a>
+    {% endif %}
+</nav>

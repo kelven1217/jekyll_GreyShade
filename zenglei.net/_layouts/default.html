@@ -1,0 +1,18 @@
+<!Doctype html>
+<html lang="zh-CN">
+    {% include head.html %}
+    <body>
+        <div class=container>
+            <h3 aria-hidden=true class="global-tips">如果你看到这段文字，说明本地存储文件已损坏。<a href="?clear_ls=1" rel=nofollow>请点击本链接自动修复</a>！</h3>
+            {% include left-col.html %}
+            <div class="mid-col">
+                <div class="mid-col-container">
+                    {{ content }}  
+                </div>
+                {% include footer.html %}
+            </div>
+        </div>
+        <input type=hidden id=CURRENT_PAGE value="blog-home">
+        {% include external.html %}
+    </body>
+</html>

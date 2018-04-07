@@ -1,0 +1,35 @@
+# Basic
+title: Zeng Lei
+subtitle: The blog of Zeng Lei
+welcome_message: 
+description: 
+creator: 
+
+url: "https://zenglei.net"
+
+permalink: /:year/:month/:title/
+
+# Format
+highlighter: rouge
+
+# Pagination
+plugins: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: ZengLeiPro
+    
+# Social
+social:
+    weibo: zengleipro
+    github: zengleipro
+    twitter: zengleipro
+    gplus: 102218225084839187723
+    mail: zengleipro@gmail.com
+
+# Google Analytics
+ga:
+    id: UA-73009334-1
+    # host: your_host

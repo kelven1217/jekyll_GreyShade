@@ -1,0 +1,27 @@
+<div class="left-col">
+    <div class="intrude-less">
+        <header id=header class=inner>
+            <div class=profilepic><a href="/"></a></div>
+            <h1><a href="/">{{ site.title }}</a></h1>
+            <p class=subtitle>{{ site.subtitle }}</p>
+            <nav id="main-nav">
+                <ul>
+                    <li class=on ><a href="/"><span>首页</span></a>
+                    <!--<li ><a href="/series/"><span>专题</span></a>-->
+                    <li ><a href="/archives/"><span>归档</span></a>
+                    <li ><a href="/blogroll/"><span>友链</span></a>
+                    <li ><a href="/about/"><span>关于</span></a>
+                </ul>
+            </nav>
+            <nav id="sub-nav">
+                <div class=social>
+                    {% if site.social.twitter %}
+                    <a class="twitter external" rel=nofollow href="http://twitter.com/{{site.social.twitter}}" title="@{{site.social.twitter}}" aria-label=Twitter target="_blank">Twitter</a>
+                    {% endif %}
+                    <a class=rss href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="RSS 订阅" aria-label="RSS 订阅">RSS</a>
+                    <a class=search href="/search.html" title="站内搜索" aria-label="站内搜索">Search</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+</div>

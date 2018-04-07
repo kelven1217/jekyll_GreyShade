@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    nginx-jekyll:
+        image: zengleipro/nginx:17.06.07
+        container_name: nginx-jekyll
+        restart: always
+        ports:
+            - "80:80"
+        volumes:
+            - ./vno/_site/:/var/www/html/
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+# docker-compose up -d

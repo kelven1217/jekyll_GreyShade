@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id=content class=inner>
+  <article class="post post-250">
+    <div class=meta>
+        <div class=date><time>{{page.date | date: "%F"}}</time></div>
+        <div class="date-modified"><time></time></div>
+        <div class=comment><a href="#comments"></a></div>
+    </div>
+    <h1 class=title>{{ page.title }}</h1>
+    <div class="entry-content">
+      {{ content }}
+    </div>
+  </article>
+
+  {% include read-more.html %}
+  {% include comments.html %}
+  
+</div>
